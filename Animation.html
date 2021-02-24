@@ -1,0 +1,121 @@
+<!doctype html> 
+
+<html>
+    <head>
+        <title>The World's Best Webpage</title>
+        <!-- Try replace main.css with style.css to see compare the use of CSS and SCSS -->
+        <link rel="stylesheet" href = "Hobbies.css" type = "text/css">
+        <script type="text/javascript" src="Animation.js"></script>
+        <style>
+          .navbar {
+            overflow: hidden;
+            background-color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          
+          .navbar a {
+            float: left;
+            font-size: 16px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+          
+          .dropdown {
+            float: left;
+            overflow: hidden;
+          }
+          
+          .dropdown .dropbtn {
+            cursor: pointer;
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+          }
+          
+          .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+            background-color:gray;
+          }
+          
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }
+          
+          .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+          }
+          
+          .dropdown-content a:hover {
+            background-color: #ddd;
+          }
+          
+          .show {
+            display: block;
+          }
+          .Anny {
+            width: 280px;
+            height: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 5px solid  black;
+            display: block;
+          }
+          </style>
+    </head>
+
+    <body>
+      <body>
+        <div class="navbar">
+          <a class="active" href="index.html">Home</a>
+          <a href="AboutMe.html">About Me</a>
+          <div class="dropdown">
+          <button class="dropbtn" onclick="myFunction()">Click Here for More
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="Hobbies.html">Hobbies</a>
+            <a href="Animation.html">Animation</a>
+            <a href="Save For Later.html">Save For Later</a>
+            <a href="Contact.html">Contact</a>
+          </div>
+          </div> 
+        </div>
+
+
+        <div class="well well-sm" style="border: 2px solid gray; background: white;">
+        <div class="row">
+           <div class="col-sm-12">
+               <p><h4 style= "text-align: center">Animation</h4></p>
+               <p style= "text-align: center"></p>
+               <p style="padding-top: 5px;"> </p>
+               <button style="margin-left: auto; margin-right: auto;">Start Animation</button>
+                    <div class="Anny" style="background:#98bf21;height:100px;width:100px;position:center;"></div>
+           </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <p style="padding-left: 20px; padding-right: 20px;">
+                    
+            </div>
+        </div>
+    </div>
+    
+
+    </body>
+</html>

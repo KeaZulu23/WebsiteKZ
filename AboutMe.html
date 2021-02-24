@@ -1,0 +1,68 @@
+<!doctype html> 
+
+<html>
+    <head>
+        <title>The World's Best Webpage</title>
+        <!-- We will attach our CSS file to our HTML5 file.-->
+        <link rel="stylesheet" href = "AboutMe.css" type = "text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="AboutMe.js"></script>
+    </head>
+
+    <!-- We will create a navbar with the links to different pages -->
+    <body>
+        <div class="navbar">
+            <a class="active" href="index.html">Home</a>
+            <a href="AboutMe.html">About Me</a>
+            <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">Click Here for More
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="Hobbies.html">Hobbies</a>
+              <a href="Animation.html">Animation</a>
+              <a href="Save For Later.html">Save For Later</a>
+              <a href="Contact.html">Contact</a>
+            </div>
+            </div> 
+          </div>
+   
+        <!-- We will create a colorful border -->
+
+        <div class="well well-sm" style="border: 2px solid grey; background: white;">
+        <div class="row">
+           <div class="col-sm-12">
+               <p><h4 style= "text-align: center">About Me</h4></p>
+               <p style= "text-align: center">By: Kea Zulu</p>
+               <p style="padding-top: 5px;"> </p>
+           </div>
+        </div>
+        <!-- This section will provide the context of each page -->
+        <div class="row">
+            <div class="col-sm-12">
+                <p style="padding-left: 20px; padding-right: 20px;">
+                    <img style="float:left" src="https://marketing.dcassetcdn.com/blog/2019/05/51-letter-k-logos/images/Bright.jpg" id="homePost">
+                    <span style="float:right"> 
+                    <p> My name is Kea Zulu, I was born in Johannesburg, South Africa, 2002. <br> I am outgoing, dedicated, and open-minded. I get across to people and adjust to changes with ease.
+                    </p>
+                    <p>Here is a quote from Oscar Wilde:</p>
+                    <blockquote>
+                        “Be yourself; everyone else is already taken.” 
+                    </blockquote>
+                    </span>
+                    <p style="font-size: 7px;">If you click on the "Hide" button, my bio will disappear. LOL.</p>
+                    <button id="hide">Hide</button>
+                    <button id="show">Show</button>
+                </p>
+                <div class="comment">
+                    <textarea id="title" type="text "rows="2" cols="18" onkeyup="Allow()" placeholder="write a comment......"></textarea>
+                    <input type="submit" value="Post" onclick="insert()" style="width:50px;" /></form>
+                    </div>
+                    <div id="display"></div>
+            </div>
+        </div>
+    </div>
+    <a href = "Hobbies.html">Next Page</a> <!-- This will then link the user to a diferent page -->
+
+    </body>
+</html>
